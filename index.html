@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>YouTube Comment Picker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This website is hosted for free using GitHub Pages!</p>
+    <div class="container">
+        <h1>YouTube Comment Picker</h1>
+        <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL">
+        <button onclick="fetchComments()">Get Comments</button>
+        <button onclick="pickRandomComment()">Pick Random Comment</button>
+        <div id="comments"></div>
+        <p id="winner"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
